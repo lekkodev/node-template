@@ -1,0 +1,19 @@
+{
+  "name": "node-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon -e ts --exec 'node --loader ts-node/esm --env-file .env.local src/server.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2"
+  }
+}
