@@ -2,12 +2,18 @@
 
 You can use this project as a starting point for trying out Lekko. Follow the instructions on our Get started guide.
 
+## Install dependencies
+
+```
+$ npm install
+```
+
 ## Run locally
 
 Start "live" server:
 
 ```
-$ npm run start
+$ npm run dev
 ```
 
 - `ts-node` transpiles TypeScript on the fly
@@ -25,11 +31,11 @@ Hello World
 Transpile to JS:
 
 ```
-npm run build
+$ npm run build
 ```
 
 Run it:
 
 ```
-$ node ./dist/server.js
+$ npm run start
 ```

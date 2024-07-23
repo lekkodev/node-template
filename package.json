@@ -5,8 +5,9 @@
   "main": "./dist/server.js",
   "type": "module",
   "scripts": {
+    "dev": "touch ./.env.local && nodemon -e ts --exec 'node --loader ts-node/esm --env-file .env.local src/server.ts'",
     "build": "tsc",
-    "start": "nodemon -e ts --exec 'node --loader ts-node/esm --env-file .env.local src/server.ts'"
+    "start": "touch ./.env.local && node --env-file .env.local dist/server.js"
   },
   "keywords": [],
   "author": "",
